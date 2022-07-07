@@ -7,10 +7,15 @@
 }
 
 .App {
-  background-color: #f8f9fa;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F9FA;
 }
 
 .content {
+  margin: auto;
+  /* width: 992px;
+  height: 992px; */
   max-width: 992px;
   background-color: #F8F9FA;
   /* margin: 40px auto;
