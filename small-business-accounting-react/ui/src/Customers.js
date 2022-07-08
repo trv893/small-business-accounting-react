@@ -17,10 +17,10 @@ const Customers = () => {
             <a className="css-customer-list-item d-flex btn shadow-sm m-1">
                 <div className="p-2 col-9">
                     <div className="row datarow ">
-                        <span className="css-customer-item-info text-uppercase list-primary"></span>
+                        <span className="css-customer-item-info text-uppercase list-primary">{item.FirstName} {item.LastName}</span>
                     </div>
                     <div className="row datarow">
-                        <span>{item.Id}</span>
+                        <span>{item.Address}</span>
                     </div>
                 </div>
                 <div className="p-2 d-flex col-3">
