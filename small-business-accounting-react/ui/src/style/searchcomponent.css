@@ -1,4 +1,8 @@
 .css-search-bar {
     margin: auto;
-    width: 240px;
+    width: 243px;
+}
+
+.css-search-bar button {
+    float:right;    
 }

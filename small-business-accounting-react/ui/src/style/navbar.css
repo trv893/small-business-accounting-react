@@ -24,6 +24,7 @@ import './navbar.css'; */
     filter: drop-shadow(0px 8px 8px rgb(139, 139, 139));
     background-color: rgb(13,110,253, .75);
     border-radius: 16px;
+    z-index: 100;
 }
 
 .css-navbtn {
