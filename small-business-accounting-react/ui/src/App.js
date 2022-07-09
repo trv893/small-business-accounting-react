@@ -3,6 +3,8 @@ import Main from './Main';
 import SearchComponent from './SearchComponent';
 import Customers from './components/customers/Customers';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Invoices from './components/invoices/Invoices';
+import Proposals from './components/proposals/Proposals';
 
 
 function App() {
@@ -12,8 +14,14 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route path="/">
+            <Route path="/customers">
               <Customers />
+            </Route>
+            <Route path="/invoices">
+              <Invoices />
+            </Route>
+            <Route path="/proposals">
+              <Proposals />
             </Route>
           </Switch>
         </div>

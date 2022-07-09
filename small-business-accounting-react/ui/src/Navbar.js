@@ -13,7 +13,7 @@ const Navbar = () => {
                 btnclass: btnclasses,
                 iconclass: iconclass,
                 spanclass: spanclass,
-                link: '#',
+                link: '/customers',
                 onnav: function(){}
             },
             {
@@ -22,7 +22,7 @@ const Navbar = () => {
                 btnclass: btnclasses,
                 iconclass: iconclass,
                 spanclass: spanclass,
-                link: '#',
+                link: '/invoices',
                 onnav: function(){}
             },
             {
@@ -31,7 +31,7 @@ const Navbar = () => {
                 btnclass: btnclasses,
                 iconclass: iconclass,
                 spanclass: spanclass,
-                link: '#',
+                link: '/proposals',
                 onnav: function(){}
             }
     ]
@@ -42,10 +42,12 @@ const Navbar = () => {
         {
             navItems.map((ni)=>
                 (
-                    <Button href={`${ni.link}`} className={`${ni.btnclass}`} key={ni.text} variant="" onClick={ni.onnav}>
-                        <i className={`${ni.iconclass} ${ni.icon}`}></i>
-                        <span className={`${ni.spanclass}`}>{ni.text}</span>
-                    </Button>
+                    <a href={ni.link}>
+                        <Button href={`${ni.link}`} className={`${ni.btnclass}`} key={ni.text} variant="" onClick={ni.onnav}>
+                            <i className={`${ni.iconclass} ${ni.icon}`}></i>
+                            <span className={`${ni.spanclass}`}>{ni.text}</span>
+                        </Button>
+                    </a>
                 )
             )
         }

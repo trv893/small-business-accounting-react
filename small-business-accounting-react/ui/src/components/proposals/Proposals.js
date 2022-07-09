@@ -1,35 +1,35 @@
 import { useEffect, useState, React } from 'react';
 import SearchComponent from '../../SearchComponent'
-import invoiceServices from '../../api-service/invoice-api-services';
+import proposalServices from '../../api-service/proposal-api-services';
 
-const Invoices = () => {
-    let [invoices, setinvoices] = useState(
+const Proposals = () => {
+    let [proposals, setproposals] = useState(
         []
     );
     
     useEffect((e) => {
-        invoiceServices.getinvoices().then((r) => {
-            setinvoices(r.data)
+        proposalServices.getproposals().then((r) => {
+            setproposals(r.data)
         })
     },[])
-    let invoiceList = invoices.map(item =>
+    let proposalList = proposals.map(item =>
         <li className='list-group-item'>
-            <a className="css-invoice-list-item d-flex btn shadow-sm m-1">
+            <a className="css-proposal-list-item d-flex btn shadow-sm m-1">
                 <div className="p-2 col-7">
                     <div className="row datarow ">
-                        <span className="css-invoice-item-info text-uppercase list-primary">{item.BillToName}</span>
+                        <span className="css-proposal-item-info text-uppercase list-primary">{item.JobName}</span>
                     </div>
                     <div className="row datarow">
                         <span>{item.BillToAddress}</span>
                     </div>
                     <div className="row datarow">
-                        <span>{item.BillToCity}</span>
+                        <span>{item.Proposal_Customer_dbo_customer.FirstName} {item.Proposal_Customer_dbo_customer.LastName}</span>
                     </div>
                 </div>
                 <div className="p-2 d-flex col-5">
                     <div className="css-customer-btn-group row">
                         <i class="bi bi-geo-alt"></i>
-                            {/* <div className="css-invoice-btn-group col-auto">
+                            {/* <div className="css-proposal-btn-group col-auto">
                                 <i className="bi btn btn-success bi-coin ms-2 shadow"><i class="bi-chevron-down"></i></i>
                             </div>
                             <div className="col-auto">
@@ -41,19 +41,19 @@ const Invoices = () => {
         </li>
     )
        return(
-        <div id="invoices-search-container-css" className="container collapse show main_tab_toggle mx-auto">
+        <div id="proposals-search-container-css" className="container collapse show main_tab_toggle mx-auto">
             <h1 className="text-center mt-3">
-                Invoices
+                Proposals
                 <i className="bi btn btn-success bi-plus ms-2 shadow"></i>
             </h1>
             <div className="justify-content-end align-content-end mb-3">
                 <SearchComponent />
             </div>
             <ul className='list-group css-no-border'>
-                {invoiceList}
+                {proposalList}
             </ul>
         </div>
      );
 }
  
-export default Invoices;
+export default Proposals;
