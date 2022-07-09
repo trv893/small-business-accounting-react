@@ -14,7 +14,7 @@ const Proposals = () => {
     },[])
     let proposalList = proposals.map(item =>
         <li className='list-group-item'>
-            <a className="css-proposal-list-item d-flex btn shadow-sm m-1">
+            <a className="css-list-item css-proposal-list-item d-flex btn shadow-sm m-1">
                 <div className="p-2 col-7">
                     <div className="row datarow ">
                         <span className="css-proposal-item-info text-uppercase list-primary">{item.JobName}</span>

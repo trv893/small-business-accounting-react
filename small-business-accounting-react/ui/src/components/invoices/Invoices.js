@@ -14,7 +14,7 @@ const Invoices = () => {
     },[])
     let invoiceList = invoices.map(item =>
         <li className='list-group-item'>
-            <a className="css-invoice-list-item d-flex btn shadow-sm m-1">
+            <a className="css-list-item css-invoice-list-item d-flex btn shadow-sm m-1">
                 <div className="p-2 col-7">
                     <div className="row datarow ">
                         <span className="css-invoice-item-info text-uppercase list-primary">{item.BillToName}</span>
