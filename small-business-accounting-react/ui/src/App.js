@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Main from './Main';
 import SearchComponent from './SearchComponent';
-import Customers from './Customers';
+import Customers from './components/customers/Customers';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 

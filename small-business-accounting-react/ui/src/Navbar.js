@@ -27,7 +27,7 @@ const Navbar = () => {
             },
             {
                 text: 'Proposals',
-                icon: 'bi-chat-text',
+                icon: 'bi-file-earmark-medical',
                 btnclass: btnclasses,
                 iconclass: iconclass,
                 spanclass: spanclass,
