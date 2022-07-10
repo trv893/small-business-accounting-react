@@ -28,7 +28,7 @@ const Proposals = () => {
                 </div>
                 <div className="p-2 d-flex col-5">
                     <div className="css-customer-btn-group row">
-                        <i class="bi bi-geo-alt"></i>
+                        <i className="bi bi-geo-alt"></i>
                             {/* <div className="css-proposal-btn-group col-auto">
                                 <i className="bi btn btn-success bi-coin ms-2 shadow"><i class="bi-chevron-down"></i></i>
                             </div>

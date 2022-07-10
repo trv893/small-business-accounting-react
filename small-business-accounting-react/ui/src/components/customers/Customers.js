@@ -1,6 +1,7 @@
 import { useEffect, useState, React } from 'react';
 import SearchComponent from '../../SearchComponent'
 import customerServices from '../../api-service/customer-api-services';
+import CustomerInvoicesPopoverButton from './CustomerInvoicesPopover';
 
 const Customers = () => {
     let [customers, setCustomers] = useState(
@@ -13,21 +14,22 @@ const Customers = () => {
         })
     },[])
     let customerList = customers.map(item =>
-        <li className=' list-group-item'>
+        
+        <li key={item.Id} className=' list-group-item'>
             <a className="css-list-item css-customer-list-item d-flex btn shadow-sm m-1">
                 <div className="p-2 col-7">
                     <div className="row datarow ">
                         <span className="css-customer-item-info text-uppercase list-primary">{item.FirstName} {item.LastName}</span>
                     </div>
                     <div className="row datarow">
-                        <span>{item.Address}&nbsp;<i class="bi bi-geo-alt"></i></span>
+                        <span>{item.Address}&nbsp;<i className="bi bi-geo-alt"></i></span>
                     </div>
                 </div>
                 <div className="p-2 d-flex col-5">
                     <div className="css-customer-btn-group row">
                             <i className="col-auto bi btn btn-success bi-telephone ms-2 shadow">&nbsp;</i>
                             <div className="css-invoice-btn-group col-auto">
-                                <i className="bi btn btn-success bi-coin ms-2 shadow"><i className="bi-chevron-down"></i></i>
+                            <CustomerInvoicesPopoverButton customer={item}/>
                             </div>
                             <div className="col-auto">
                                 <i className="css-proposal-btn-group bi btn btn-success bi-file-earmark-medical ms-2 shadow"><i className="bi bi-chevron-down"></i></i>

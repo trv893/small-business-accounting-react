@@ -42,8 +42,8 @@ const Navbar = () => {
         {
             navItems.map((ni)=>
                 (
-                    <a href={ni.link}>
-                        <Button href={`${ni.link}`} className={`${ni.btnclass}`} key={ni.text} variant="" onClick={ni.onnav}>
+                    <a key={ni.link} href={ni.link}>
+                        <Button  className={`${ni.btnclass}`} key={ni.text} variant="" onClick={ni.onnav}>
                             <i className={`${ni.iconclass} ${ni.icon}`}></i>
                             <span className={`${ni.spanclass}`}>{ni.text}</span>
                         </Button>
