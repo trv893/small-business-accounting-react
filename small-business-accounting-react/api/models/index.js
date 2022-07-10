@@ -7,7 +7,7 @@ const Sequelize = require('sequelize');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 // used to be config.json from sequelize_auto
-const config = require(path.join(__dirname, '../controllers/config.js'));
+const config = require(path.join(__dirname, '../configs/config.js'));
 const db = {};
 
 config.logging =  customLogger;

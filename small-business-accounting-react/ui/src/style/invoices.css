@@ -1,0 +1,34 @@
+
+.css-invoice-list-item{
+    background-color: rgb(255, 255, 255);
+}
+.css-invoice-list-item span{
+    text-align: start;
+}
+
+.css-invoice-btn-group .bi-telephone {
+    height: 38px;
+}
+
+.css-invoice-btn-group .bi-chevron-down {
+    margin-left: 8px;
+    margin-right: -8px;
+    /* border: solid black 1px;
+    border-radius: 16px;
+    border-style: ; */
+}
+
+.css-invoice-btn-group .bi-chevron-down:hover{
+    margin-left: 12px;
+	transform: scale(1.50);
+	transition: 0.2s ease;
+    /* text-decoration: underline; */
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 32px;
+    filter: drop-shadow(0px 5px 5px rgb(40, 82, 172));
+}
+
+.css-invoice-list-item .bi-geo-alt {
+    color: #0D6EFD;
+
+}
