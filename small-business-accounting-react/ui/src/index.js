@@ -10,6 +10,7 @@ import './style/searchcomponent.css';
 import './style/customers.css';
 import './style/invoices.css';
 import './style/proposals.css';
+import './style/popover.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

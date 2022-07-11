@@ -29,6 +29,7 @@
 .css-no-border li{
   border: none;
   background-color: #F8F9FA;
+  padding: 0;
 }
 .css-list-item:hover {
   /* transform: scale(1.05); */
