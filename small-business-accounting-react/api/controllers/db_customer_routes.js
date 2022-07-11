@@ -14,16 +14,16 @@ const PORT = process.env.PORT || 3001;
 
 router.get('/customer', async (req, res) => {
     var findOpts = {
-        // include: [
-        //     {
-        //         model: models.dbo_invoices,
-        //         as: "dbo_invoices",
-        //     },
-        //     {
-        //         model: models.dbo_proposals,
-        //         as: "dbo_proposals",
-        //     }
-        // ],
+        include: [
+            {
+                model: models.dbo_invoices,
+                as: "dbo_invoices",
+            },
+            {
+                model: models.dbo_proposals,
+                as: "dbo_proposals",
+            }
+        ],
     };
     if (req.query.q) {
         // specifies the params of the sequelize findAll request
