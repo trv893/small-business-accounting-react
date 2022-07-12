@@ -1,12 +1,14 @@
 // import Overlay from 'react-bootstrap/Overlay';
 import Button from 'react-bootstrap/esm/Button';
+import Modal from 'react-bootstrap/Modal';
+
+
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Moment from 'moment';
 // import PopoverBody from 'react-bootstrap/PopoverBody';
 
 const CustomerInvoicesPopoverContent = (customer) => {
-  const formatDate = Moment().format("MMM Do YY");
   // console.log(customer.customer.dbo_invoices);
   const invoices = customer.customer.dbo_invoices;
   let invoiceList = invoices.map(item =>
