@@ -18,15 +18,6 @@
     border-style: ; */
 }
 
-.css-invoice-btn-group .bi-chevron-down:hover{
-    margin-left: 12px;
-	transform: scale(1.50);
-	transition: 0.2s ease;
-    /* text-decoration: underline; */
-    border: solid rgb(255, 255, 255) 1px;
-    border-radius: 32px;
-    filter: drop-shadow(0px 5px 5px rgb(40, 82, 172));
-}
 
 .css-invoice-list-item .bi-geo-alt {
     color: #0D6EFD;

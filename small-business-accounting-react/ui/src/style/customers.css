@@ -19,14 +19,14 @@
     border-style: ; */
 }
 
-.css-customer-btn-group .bi-chevron-down:hover{
+.css-customer-btn-group button:hover{
     margin-left: 12px;
-	transform: scale(1.50);
+	transform: scale(1.05);
 	transition: 0.2s ease;
     /* text-decoration: underline; */
     border: solid rgb(255, 255, 255) 1px;
-    border-radius: 32px;
-    filter: drop-shadow(0px 5px 5px rgb(40, 82, 172));
+    border-radius: 8px;
+    filter: drop-shadow(0px 5px 5px rgba(141, 152, 173, 0.822));
 }
 
 .css-customer-list-item .bi-geo-alt {

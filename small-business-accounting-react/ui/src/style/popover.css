@@ -1,6 +1,19 @@
 .popover {
     max-width: 500px;
     width: 500px;
-    max-height: 200px;
-    height: 200px;
+    max-height: 550px;
+    height: 550px;
+}
+
+.popover-body {
+    background-color: #F8F9FA;
+    height: 500px;
+    overflow-y: auto;
+    white-space:pre-wrap;
+}
+
+.popover-body li {
+    background-color: #F8F9FA;
+
+    border: none;
 }
