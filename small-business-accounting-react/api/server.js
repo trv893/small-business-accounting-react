@@ -19,6 +19,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', apiRoutes);
 
+app.use(express.static(path.resolve(__dirname, "./ui/build")));
+
 // catch 404 and forward to error handler
 // app.use(function (req, res, next) {
 //     var err = new Error('Not Found');
