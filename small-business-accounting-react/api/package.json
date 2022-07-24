@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server"
+    "start": "node server.js",
+    "heroku-postbuild": "cd ui && npm install && npm run build"
   },
   "description": "small-buisness-accounting",
   "author": {
