@@ -3,10 +3,19 @@ import Button from 'react-bootstrap/esm/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import Moment from 'moment';
+
+import { useEffect, useState, React } from 'react';
+
+
+
+import InvoicesModalButton from '../invoices/InvoiceModal';
 // import PopoverBody from 'react-bootstrap/PopoverBody';
 
 const CustomerInvoicesPopoverContent = (customer) => {
-  const formatDate = Moment().format("MMM Do YY");
+
+  // const {modalShow, setModalShow} = React.useState(false);
+
+
   // console.log(customer.customer.dbo_invoices);
   const invoices = customer.customer.dbo_invoices;
   let invoiceList = invoices.map(item =>
@@ -23,6 +32,7 @@ const CustomerInvoicesPopoverContent = (customer) => {
                     <span>{Moment(item.InvoiceDate).format("MMM Do YY")}</span>
                 </div>
             </div>
+            {/* <InvoicesModalButton invoice={invoices}/> */}
             {/* <div className="p-2 d-flex col-5">
                 <div className="css-customer-btn-group row">
                     <i className="bi bi-geo-alt"></i>

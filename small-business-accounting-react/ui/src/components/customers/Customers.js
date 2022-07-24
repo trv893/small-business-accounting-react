@@ -29,7 +29,7 @@ const Customers = () => {
                     <div className="css-customer-btn-group row">
                             <i className="col-auto bi btn btn-success bi-telephone ms-2 shadow">&nbsp;</i>
                             <div className="css-invoice-btn-group col-auto">
-                            <CustomerInvoicesPopoverButton customer={item}/>
+                        <CustomerInvoicesPopoverButton customer={item}/>
                             </div>
                             <div className="col-auto">
                                 <i className="css-proposal-btn-group bi btn btn-success bi-file-earmark-medical ms-2 shadow"><i className="bi bi-chevron-down"></i></i>
