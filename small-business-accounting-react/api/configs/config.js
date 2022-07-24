@@ -6,7 +6,7 @@ const myconfig = {
     "database": process.env.DB_NAME,
     "username": process.env.DB_USER,
     "password": process.env.DB_PW,
-    "use_env_variable": false,
+    "use_env_variable": true,
     "dialect": "mysql",
     "authRedirectUri": process.env.AUTH_0_REDIRECT
 };
