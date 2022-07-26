@@ -8,7 +8,6 @@ const myconfig = {
     "password": process.env.DB_PW,
     "use_env_variable": true,
     "dialect": "mysql",
-    "authRedirectUri": process.env.AUTH_0_REDIRECT
 };
 
 
