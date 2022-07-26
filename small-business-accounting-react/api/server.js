@@ -11,7 +11,7 @@ var apiRoutes = require('./controllers');
 var app = express();
 
 app.use(cors({
-    origin: '*'
+    origin: 'xyz'
 }));
 app.use(logger('dev'));
 app.use(bodyParser.json());
