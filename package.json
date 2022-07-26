@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "cd small-business-accounting-react/api && npm install && serve -s build",
+    "start": "cd small-business-accounting-react/api && npm install && node server.js",
     "heroku-postbuild": "cd small-business-accounting-react/ui && npm install && npm run build"
   }
 }
