@@ -7,7 +7,7 @@ const myconfig = {
     "username": "fit2v9kc84ljzza8",
     "password": "fbisma7mr5ogfkpk",
     "port": 3306,
-    "use_env_variable": false,
+    "use_env_variable": true,
     "dialect": "mysql",
 };
 
