@@ -6,8 +6,8 @@ const myconfig = {
     "database": "e2fgoyj4zu4ou961",
     "username": "fit2v9kc84ljzza8",
     "password": "fbisma7mr5ogfkpk",
-    "port": "3306",
-    "use_env_variable": true,
+    "port": 3306,
+    "use_env_variable": false,
     "dialect": "mysql",
 };
 
